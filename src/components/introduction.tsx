@@ -18,11 +18,11 @@ export function Introduction(): JSX.Element {
             <div className="space-y-2">
                 <h1 className="text-5xl font-bold lg:text-8xl md:text-6xl">JESPER</h1>
                 <h1 className="text-5xl font-bold lg:text-8xl md:text-6xl">SANDBERG</h1>
-                <h1 className="text-5xl font-bold lg:text-8xl md:text-6xl">HESSELGREN</h1>
+                <h1 className="text-5xl  font-bold lg:text-8xl md:text-6xl">HESSELGREN</h1>
                 <div className="flex flex-row gap-4 mt-3">
-                    <Button className="font-bold cursor-pointer p-5 lg:text-lg " onClick={() => window.location.href = "/CV.pdf"}>Download CV</Button>
-                    <FaGithub className="cursor-pointer" size={37}/>
-                    <FaLinkedin className="cursor-pointer" size={37}/>
+                    <Button className=" font-bold cursor-pointer hover:scale-110 p-5 lg:text-lg " onClick={() => window.location.href = "/CV.pdf"}>Download CV</Button>
+                    <FaGithub className="cursor-pointer hover:scale-115" size={37}/>
+                    <FaLinkedin className="cursor-pointer hover:scale-115" size={37}/>
                 </div>
             </div>    
             <div className="w-[320px] h-[320px] lg:w-[450px] lg:h-[450px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden ring-2 ring-border ">

@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "motion/react"
 
 export interface ProjectCardProps {
   title: string
@@ -20,6 +21,7 @@ export function ProjectCard({
   githubUrl,
 }: ProjectCardProps) {
   return (
+
     <Card className="w-full max-w-sm transition-all hover:shadow-lg relative flex flex-col h-full">
       {inDevelopment && (
         <Badge
@@ -36,7 +38,7 @@ export function ProjectCard({
       <CardContent className="flex-grow">
         <div className="flex flex-wrap gap-2 mb-4">
           {techStack.map((tech) => (
-            <Badge key={tech} variant="outline" className="bg-gray-100 text-gray-800">
+            <Badge key={tech} variant="outline" className=" text-gray-800">
               {tech}
             </Badge>
           ))}

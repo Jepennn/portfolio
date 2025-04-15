@@ -17,10 +17,10 @@ export function Footer() : JSX.Element {
             </div>
             <div className="flex flex-row gap-4 pr-10">
                 <a href="https://github.com/jeppehesselgren" target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="cursor-pointer" size={37}/>
+                    <FaGithub className="cursor-pointer hover:scale-115" size={37}/>
                 </a>
                 <a href="https://www.linkedin.com/in/jesper-sandberg-9999999/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="cursor-pointer" size={37}/>
+                    <FaLinkedin className="cursor-pointer hover:scale-115" size={37}/>
                 </a>
             </div>
         </footer>

@@ -2,13 +2,15 @@ import { motion } from "motion/react";
 import { Button } from "./ui/button";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { ArrowDown } from 'lucide-react';
+import { Navbar } from "./navbar";
 
 
 export function Presentation(){
     return (
-        <div className="flex flex-col items-center my-16 ">
+        <div className="flex flex-col items-center">
             <div>
-
+                <Navbar/>
                 {/*Hi, I'm Jesper Hesselgren + Image section*/}
                 <motion.div  
                     className="flex flex-row mb-2 items-center"
@@ -79,7 +81,7 @@ export function Presentation(){
                             transition: { duration: 0.8, delay: 2.7 },
                         }}
                     >
-                    <Button variant={"outline"} className="p-5"> 
+                    <Button variant={"outline"} className="p-5 bg-primary-foreground"> 
                         <span className="relative flex size-3">
                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
                         <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
@@ -88,7 +90,8 @@ export function Presentation(){
                     </Button>
                     </motion.button>
                 </div>
-            </div>  
+            </div> 
+            <div className="flex flex-col items-center gap-2 mt-45"><span>Read more</span> <ArrowDown size={32} className="animate-bounce"/></div> 
         </div>
     );
 }

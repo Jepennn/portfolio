@@ -1,13 +1,26 @@
-import { DropdownMenuSeparator } from "./ui/dropdown-menu" 
+import {delay, motion} from "motion/react";
+
 
 
 export function Navbar(){
+
+
+
     return (
-        <nav className=" justify-center items-center flex bg-primary-foreground py-5 px-10 rounded-4xl mt-20 mb-20 gap-24 shadow-md">
-            <div> About</div>
-            <div>Projects</div>
-            <div>Experience</div>
-            <div>Contact</div>
-        </nav>
+        <motion.nav className="flex justify-between items-center border-1 p-5 px-30 bg-primary-foreground rounded-4xl shadow-md sticky top-[50px] gap-10"
+        initial={{ y: -150}}
+        animate={{ y: [ -150, 20, -10, 0 ]}}
+        transition={{
+            duration:0.8, 
+            delay: 3.1,
+            ease: "easeOut",
+            times: [0, 0.4, 0.7, 1],
+        }}>
+
+            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">About</span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">Projects</span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">Experience</span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">Contact</span></div>
+        </motion.nav>
     )
 } 

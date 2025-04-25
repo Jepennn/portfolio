@@ -25,7 +25,8 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary-text-color: oklch(0.250 0 0); /*This is the color of the text*/
+  --primary-text-color: oklch(0.250 0 0); /*This is the color of the text, USING THIS*/ 
+  --secondary-text-color: oklch(0.600 0 0); /*This is the lighter text color variant, USING THIS*/
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -50,6 +51,13 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --orange: #FFA500;  
+  --secondary-gray: #e0e0e0;
+  /* --secondary-gray-dark: #f0f0f0;
+  --secondary-gray-darker: #dcdcdc;
+  --secondary-gray-darkest: #f0f0f0; */
+
 
 }
 
@@ -124,26 +132,49 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-primary-orange: var(--orange);
+  --color-secondary-gray: var(--secondary-gray);
+
+  /*Self created variables that also needs to be added to the dark theme*/
+
+  --color-primary-text: var(--primary-text-color);
+  --color-secondary-text: var(--secondary-text-color);
+ 
 }
 
-/* #root {
+#root {
   max-width: 1024px;
   width: 100%;
-} */
+}
 
 @layer base {
+  
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply m-0 p-0 min-w-[320px] min-h-screen bg-background text-foreground ;
-  }
-}
 
-@layer base {
+  body {
+    @apply m-0 p-0 min-w-[320px] h-full bg-background text-foreground flex flex-col items-center ;
+  }
+
+  #root {
+    @apply min-h-full w-full;
+  }
 
   h1{
     @apply text-6xl font-bold text-primary
+  }
+
+  h3{
+    @apply text-[1.3rem] font-bold text-primary-text
+  }
+
+  h5{
+    @apply text-[1rem] font-medium text-secondary-text
+  }
+
+  p{
+    @apply text-[1.rem] 
   }
 }
 
@@ -153,7 +184,8 @@
     @apply cursor-[url('/cursor.svg')_1_12,_auto];
   }
 
-  .animate-name{
+  .animation-button{
+    @apply cursor-pointer hover:scale-125 transition-all ease-out duration-300 
   }
 
 }

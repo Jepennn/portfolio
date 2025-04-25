@@ -1,17 +1,18 @@
 import { Presentation } from "@/components/presentation"
 import { HamburgerMenu } from "@/components/hamburgerMenu"
 import { Navbar } from "@/components/navbar"
-
+import { AboutMe } from "@/components/aboutMe"
 
 
 function App() {
 
   return (
     <> 
-      {/* <Navbar/> */}
-      {/* <HamburgerMenu/> */}
-      <HamburgerMenu/>
+      <Navbar/>
       <Presentation />  
+      <AboutMe/>
+      {/* <HamburgerMenu/> */}
+      {/* <HamburgerMenu/> */}
     </>
   )
 }

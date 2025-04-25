@@ -3,18 +3,21 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { ArrowDown } from 'lucide-react';
 import { Button } from "./ui/button";
-import { useMotionValue, useTransform, animate } from "motion/react";
-import { useEffect } from "react";
+import { TypingText } from "./typingText";
+import { Navbar } from "./navbar";  
 
 
 
 export function Presentation(){
     
 
+    //This is the first viewPort of the page, it contains the navbar and the presentation section
 
     return (
-        <div className="flex flex-col gap-45 items-center h-screen pt-40">
-            <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center h-screen">
+
+            <Navbar/>
+            <div className="flex flex-col items-center mt-20 grow">
 
                 {/*Hi, I'm Jesper Hesselgren*/}
                 <TypingText text="Hi, I'm Jesper Hesselgren" delay={0}/>
@@ -29,7 +32,7 @@ export function Presentation(){
 
     
                 {/*Socials button section*/}
-                <div className="flex flex-row w-full justify-start gap-5 mb-3">
+                <div className="flex flex-row w-full justify-start gap-5 mt-2">
                     <motion.button
                         className="animation-button"
                         initial={{ scale: 0 }}
@@ -69,7 +72,7 @@ export function Presentation(){
                 </div>
             </div> 
             <motion.div 
-            className="flex flex-col items-center gap-2 cursor-pointer"
+            className="flex flex-col items-center gap-2 cursor-pointer mb-15"
             initial={{ scale: 0 }}
             animate={{
                 scale: 1.0,
@@ -83,29 +86,3 @@ export function Presentation(){
 }
 
 
-export default function TypingText( {text, delay}: {text: string, delay: number}) {
-    const baseText = text;
-    const count = useMotionValue(0);
-    const rounded = useTransform(count, (latest) => Math.round(latest));
-    const displayText = useTransform(rounded, (latest) =>
-      baseText.slice(0, latest)
-    );
-  
-    useEffect(() => {
-      const controls = animate(count, baseText.length, {
-        type: "tween",
-        duration: 1.5,
-        delay: delay,
-        ease: "easeInOut",
-      });
-      return controls.stop;
-    }, []);
-  
-    return (
-      <motion.h1
-        className="cursor-bracket inline-block overflow-hidden whitespace-nowrap h-[1.1em] w-full"
-      >
-        <motion.span>{displayText}</motion.span>
-      </motion.h1>
-    );
-}

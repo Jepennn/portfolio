@@ -17,7 +17,7 @@ export function Presentation(){
         <div className="flex flex-col items-center h-screen">
 
             <Navbar/>
-            <div className="flex flex-col items-center mt-20 grow">
+            <div className="flex flex-col items-center mt-30 grow">
 
                 {/*Hi, I'm Jesper Hesselgren*/}
                 <TypingText text="Hi, I'm Jesper Hesselgren" delay={0}/>
@@ -71,7 +71,8 @@ export function Presentation(){
                     </motion.div>
                 </div>
             </div> 
-            <motion.div 
+            <motion.div
+
             className="flex flex-col items-center gap-2 cursor-pointer mb-15"
             initial={{ scale: 0 }}
             animate={{
@@ -79,7 +80,7 @@ export function Presentation(){
                 transition: { duration: 0.8, delay: 3.1 },
             }}
             >
-                <span>Read more</span> <ArrowDown size={32} className="animate-bounce"/>
+                <span> Read more</span><a href="#about" className="rounded-full animate-bounce"><ArrowDown size={32} className=""></ArrowDown></a>
             </motion.div>
         </div>
     );

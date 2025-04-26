@@ -8,6 +8,7 @@
   font-family: Outfit, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  scroll-behavior: smooth;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -57,6 +58,7 @@
   /* --secondary-gray-dark: #f0f0f0;
   --secondary-gray-darker: #dcdcdc;
   --secondary-gray-darkest: #f0f0f0; */
+
 
 
 }
@@ -154,7 +156,7 @@
   }
 
   body {
-    @apply m-0 p-0 min-w-[320px] h-full bg-background text-foreground flex flex-col items-center ;
+    @apply m-0 p-0 min-w-[320px] h-full bg-background text-foreground flex flex-col items-center scroll-smooth;
   }
 
   #root {

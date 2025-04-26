@@ -17,10 +17,10 @@ export function Navbar(){
             times: [0, 0.4, 0.7, 1],
         }}>
 
-            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">About</span></div>
-            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">Projects</span></div>
-            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">Experience</span></div>
-            <div className="flex-grow text-center"><span className="cursor-pointer border-b-2 px-3 py-1 ">Contact</span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#about">About</a></span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#projects">Projects</a></span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#experience">Experience</a></span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#contact">Contact</a></span></div>
         </motion.nav>
     )
 } 

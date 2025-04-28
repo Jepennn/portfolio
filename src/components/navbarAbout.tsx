@@ -59,7 +59,7 @@ const jobb = [
 {/* TODO: Career component*/}
 function CareerContent(){
     return (
-        <div className="grid grid-cols-2 gap-10 my-5 p-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-5 p-5">
             {jobb.map((job, index) => (
                 <CarrerCard key={index} company={job.company} position={job.position} description={job.description} date={job.date} svg={job.svg}/>
             ))}

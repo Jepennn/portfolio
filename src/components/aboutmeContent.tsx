@@ -9,7 +9,7 @@ export function AboutMeContent(){
             opacity: 1,
             transition: { duration: 0.25, delay: 0.03},
         }}
-        className="flex justify-start items-start p-5 my-5 gap-12">
+        className="flex justify-start items-center p-5 my-5 gap-12">
         <p className="w-2/3 text-lg">
         I'm a 24-year-old KTH student, currently studying my second year of the Information Technology program. I have a strong passion for web development, and tech in general. I love exploring new technologies, learning new frameworks, and building different types of applications. When I am not studying or playing around with code, I enjoy training at the gym, going for runs, and spending quality time with my friends and family.
         </p>

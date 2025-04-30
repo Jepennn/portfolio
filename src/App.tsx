@@ -12,7 +12,7 @@ function App() {
     <> 
       {/* <Navbar/> */}
       <Presentation />  
-      <AboutSection/>
+      <AboutSection />
       <ProjectSection/>
       <TechStackSection/>
       <Footer/>

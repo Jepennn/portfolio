@@ -14,7 +14,7 @@ export function Presentation(){
     //This is the first viewPort of the page, it contains the navbar and the presentation section
 
     return (
-        <div className="flex flex-col items-center h-screen">
+        <div className="flex flex-col items-center h-screen max-h-[710px] mb-40">
 
             <Navbar/>
             <div className="flex flex-col items-center mt-40 grow">

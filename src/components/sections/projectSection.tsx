@@ -8,41 +8,40 @@ export function ProjectSection(){
         {
             title: "Portfolio",
             id: 1,
-            description: "This is my portfolio website built to showcase my skills and projects.",
+            description: "This is my personal portfolio website built to showcase my skills and projects I have worked on or currently working on.",
             typeOfProject: "Personal Project",
-            image: "/project1.png",
-            dev: false,
+            image: "/project-Images/portfolio.png",
+            dev: true,
             techStack: ["React", "TypeScript", "Tailwind", "Framer Motion"],
-            githubUrl: "https://github.com/Jepennn",
-            demoUrl: "https://project1.com",
+            githubUrl: "https://github.com/Jepennn/portfolio",
+            demoUrl: "https://www.jesperhesselgren.dev/",
         },
         {
             title: "KTH AI society",
             id: 2,
             description: "KTH AI society is a student organization, I'm apart of the IT-team as a frontend developer rebuilding the website.",
             typeOfProject: "Student Organization",
-            image: "/project2.png",
+            image: "/project-Images/kth-ai-society.png",
             dev: false,
-            techStack: ["React", "Next.js", "Tailwind CSS"],
-            githubUrl: "https://github.com/Jepennn",
-            demoUrl: "https://project2.com",
+            techStack: ["Next.js", "TypeScript", "TanStack Query", "Tailwind CSS"],
+            demoUrl: "https://kthais.com/",
         },
         {
             title: "DroneZone",
             id: 3,
             description: "Group project, working on a drone tracking system. Where I was responsible for the setting up the node.js server with express, websocket and supabase.",
             typeOfProject: "Group Project",
-            image: "/project2.png",
+            image: "/project-Images/dronezone.png",
             dev: false,
             techStack: ["Node.js", "Express.js", "Supabase", "Tailwind CSS", "React"],
-            githubUrl: "https://github.com/Jepennn",
-            demoUrl: "https://project2.com",
+            githubUrl: "https://github.com/andensanden/II1305",
+            demoUrl: "https://dronezone.se",
         },
     ]; 
 
 
     return (
-        <div id="projects" className="min-h-screen mb-40">
+        <div id="projects" className="mb-40">
             <motion.div
             initial={{ y:100, opacity: 0 }}
             whileInView={{ y:0, opacity: 1 }}

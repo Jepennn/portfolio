@@ -1,7 +1,9 @@
-import { Presentation } from "@/components/presentation"
-import { HamburgerMenu } from "@/components/hamburgerMenu"
-import { Navbar } from "@/components/navbar"
-import { AboutMe } from "@/components/aboutMe"
+import { Presentation } from "@/components/sections/presentationSection"
+import { AboutSection } from "@/components/sections/aboutSection"
+import { ProjectSection } from "@/components/sections/projectSection"
+import { TechStackSection } from "@/components/sections/techStackSection"
+import { Footer } from "@/components/sections/footerSection"
+
 
 
 function App() {
@@ -10,9 +12,13 @@ function App() {
     <> 
       {/* <Navbar/> */}
       <Presentation />  
-      <AboutMe/>
-      {/* <HamburgerMenu/> */}
-      {/* <HamburgerMenu/> */}
+      <AboutSection/>
+      <ProjectSection/>
+      <TechStackSection/>
+      <Footer/>
+
+      {/* Maybe remove and only have a footer with my details*/ }
+      {/* <HamburgerMenu/> */} 
     </>
   )
 }

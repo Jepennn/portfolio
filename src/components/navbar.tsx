@@ -12,14 +12,14 @@ export function Navbar(){
         animate={{ y: [ -150, 20, -10, 10, 0 ]}}
         transition={{
             duration:0.8, 
-            delay: 3.1,
+            delay: 2.5,
             ease: "easeOut",
             times: [0, 0.4, 0.6, 0.8, 1],
         }}>
 
             <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#about">About</a></span></div>
             <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#projects">Projects</a></span></div>
-            <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#experience">Experience</a></span></div>
+            <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#techStack">Tech stack</a></span></div>
             <div className="flex-grow text-center"><span className="cursor-pointer px-5 py-5 rounded-4xl hover:bg-secondary-gray"><a href="#contact">Contact</a></span></div>
         </motion.nav>
     )

@@ -15,7 +15,7 @@ export function TypingText( {text, delay}: {text: string, delay: number}) {
     useEffect(() => {
       const controls = animate(count, baseText.length, {
         type: "tween",
-        duration: 1.5,
+        duration: 1.2,
         delay: delay,
         ease: "easeInOut",
       });

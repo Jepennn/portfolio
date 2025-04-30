@@ -187,7 +187,7 @@
   }
 
   .animation-button{
-    @apply cursor-pointer hover:scale-125 transition-all ease-out duration-300 
+    @apply cursor-pointer hover:scale-110 transition-all ease-out duration-300 
   }
 
 }

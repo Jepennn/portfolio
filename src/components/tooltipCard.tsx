@@ -1,7 +1,7 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 
-export function TooltipCard({ children, content, link }: { children: React.ReactNode, content: string, link: string }){
+export function TooltipCard({ children, content, link }: { children: React.ReactNode, content: string, link?: string }){
 
     return (
         <TooltipProvider>

@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { motion } from "motion/react"
 import { TooltipCard } from "./tooltipCard"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaDev } from "react-icons/fa";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
 
@@ -42,7 +42,7 @@ export function ProjectCard({
             scale: 1,
             opacity: 1,
             x: 0,
-            transition: { duration: 0.70, delay: 0.03},
+            transition: { duration: 0.85, delay: 0.03, ease: "easeOut"},
         }}
         viewport={{once: true, amount: 0.5}}
         className="border-2 flex gap-4 rounded-4xl shadow-md p-8 my-6">
@@ -55,6 +55,7 @@ export function ProjectCard({
                     <h3>{title}</h3>
                     {githubUrl && <TooltipCard content="Github" link={githubUrl}><FaGithub size={20}/></TooltipCard>}
                     {demoUrl && <TooltipCard content="Live demo" link={demoUrl}><FaExternalLinkAlt size={17}/></TooltipCard>}
+                    {dev && <TooltipCard content="Project is under development"><FaDev size={17}/></TooltipCard>}
                 </div>
                     <h5 className="mb-2">{typeOfProject}</h5>
                     <p className="mb-6">{description}</p>

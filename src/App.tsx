@@ -3,6 +3,7 @@ import { AboutSection } from "@/components/sections/aboutSection"
 import { ProjectSection } from "@/components/sections/projectSection"
 import { TechStackSection } from "@/components/sections/techStackSection"
 import { Footer } from "@/components/sections/footerSection"
+import { HamburgerMenu } from "@/components/hamburgerMenu"
 
 
 
@@ -10,15 +11,14 @@ function App() {
 
   return (
     <> 
-      {/* <Navbar/> */}
       <Presentation />  
+      {/* <HamburgerMenu/>  */}
       <AboutSection />
       <ProjectSection/>
       <TechStackSection/>
       <Footer/>
 
       {/* Maybe remove and only have a footer with my details*/ }
-      {/* <HamburgerMenu/> */} 
     </>
   )
 }

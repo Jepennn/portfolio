@@ -24,7 +24,7 @@ export function TypingText( {text, delay}: {text: string, delay: number}) {
   
     return (
       <motion.h1
-        className="cursor-bracket inline-block overflow-hidden whitespace-nowrap h-[1.1em] w-full"
+        className="cursor-bracket inline-block overflow-hidden whitespace-nowrap h-[1.3em] w-full"
       >
         <motion.span>{displayText}</motion.span>
       </motion.h1>

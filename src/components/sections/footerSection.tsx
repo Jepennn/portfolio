@@ -7,7 +7,7 @@ import { IoMail } from "react-icons/io5";
 export function Footer(){
     return (
         <>
-            <div id="contact" className="border-t-2 py-10 flex justify-between items-center">
+            <div id="contact" className="border-t-2 py-10 flex flex-col sm:flex-row gap-4 justify-between items-center">
                 <div className="flex flex-col gap-2">
                     <span className="flex gap-2">
                         <IoMail size={30}/>

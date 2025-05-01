@@ -1,6 +1,10 @@
 import { motion } from "motion/react";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 export function TechStackSection(){
+
+
+    const screenSize = useWindowSize();
 
     return (
         <div id="techStack" className="mb-40">
@@ -11,21 +15,23 @@ export function TechStackSection(){
                 viewport={{ amount:0.2, once: true }}
                 className="flex flex-col items-start">
                 <h1 className="mb-5">Tech Stack</h1>
-                <p className="mb-5 w-2/3">
+                <p className="mb-5 sm:w-2/3">
                 Here is a list of technologies I’m familiar with and use to bring ideas to life
                 </p>
                 </motion.div>
 
                 <div className="flex flex-col justify-start gap-5">
 
-                <div className="flex flex-row justify-between gap-5">
+                <div className="flex flex-col sm:flex-row justify-between gap-5">
+
                     {/* This is the column with frontend technologies */}
-                    <motion.div className="flex flex-col w-1/2 border-2 p-6 rounded-4xl shadow-md"
-                    initial={{ opacity: 0, scale: 0.95, x:-300}}
+                    <motion.div className="flex flex-col sm:w-1/2 border-2 p-6 rounded-4xl shadow-md"
+                    initial={{ opacity: 0, scale: 0.95, x: screenSize < 768 ? -100 : -300}}
                     whileInView={{
                         scale: 1,
                         opacity: 1,
                         x: 0,
+                        y: 0,
                         transition: { duration: 0.70, delay: 0.03},
                     }}
                     viewport={{once: true, amount: 0.5}}>
@@ -43,8 +49,8 @@ export function TechStackSection(){
 
 
                     {/* This is the column with backend technologies */}
-                    <motion.div className="flex flex-col w-1/2 border-2 p-6 rounded-4xl shadow-md"
-                    initial={{ opacity: 0, scale: 0.95, x:300}}
+                    <motion.div className="flex flex-col sm:w-1/2 border-2 p-6 rounded-4xl shadow-md"
+                initial={{ opacity: 0, scale: 0.95, x: screenSize < 768 ? 100 : 300}}
                     whileInView={{
                         scale: 1,
                         opacity: 1,

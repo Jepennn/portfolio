@@ -11,7 +11,7 @@ export function AboutSection() {
     viewport={{ amount:0.3, once: true }}
     >
 
-      <h1 className="mb-5">About Me</h1>
+      <h1 className="mb-2 sm:mb-5">About Me</h1>
       <AboutContent/>
     </motion.div>
   );

@@ -41,7 +41,7 @@ export function ProjectSection(){
 
 
     return (
-        <div id="projects" className="mb-40">
+        <div id="projects" className="mb-30 sm:mb-40">
             <motion.div
             initial={{ y:100, opacity: 0 }}
             whileInView={{ y:0, opacity: 1 }}
@@ -49,7 +49,7 @@ export function ProjectSection(){
             viewport={{ amount:0.2, once: true }}
             className="flex flex-col items-start">
             <h1 className="mb-5">Projects</h1>
-            <p className="mb-5 w-2/3">Here are a few projects I have worked on and currently working on.<br/>You can find more projects on my <a className="text-blue-500 underline" href="https://github.com/Jepennn">GitHub</a> </p>
+            <p className="mb-5 sm:w-2/3">Here are a few projects I have worked on and currently working on. <br className="hidden sm:block"/>You can find more projects on my <a className="text-blue-500 underline" href="https://github.com/Jepennn">GitHub.</a> </p>
             </motion.div>
             {projects.map((project) => (
                 <ProjectCard key={project.id} {...project} />

@@ -147,6 +147,7 @@
 #root {
   max-width: 1024px;
   width: 100%;
+  padding: 1rem;
 }
 
 @layer base {
@@ -164,19 +165,19 @@
   }
 
   h1{
-    @apply text-6xl font-bold text-primary
+    @apply text-[1.8rem] sm:text-6xl font-bold text-primary
   }
 
   h3{
-    @apply text-[1.3rem] font-bold text-primary-text
+    @apply sm:text-[1.3rem] font-bold text-primary-text
   }
 
   h5{
-    @apply text-[1rem] font-medium text-secondary-text
+    @apply sm:text-[1rem] font-medium text-secondary-text
   }
 
   p{
-    @apply text-[1.rem] 
+    @apply text-[0.9rem] sm:text-[1rem] 
   }
 }
 

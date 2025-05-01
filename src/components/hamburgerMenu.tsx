@@ -1,24 +1,24 @@
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator } from "@radix-ui/react-dropdown-menu"
 import { Menu } from 'lucide-react';
-import { Switch } from "@/components/ui/switch";
 
 
 export function HamburgerMenu(){
     return (
-        <div className="flex justify-end items-center mr-15 mt-10">
-            {/* <DropdownMenu>
-                <DropdownMenuTrigger className="p-3 bg-primary-foreground rounded-full">
-                    <Menu size={32}/>
+        <div className="flex justify-end w-full mt-2">
+            <DropdownMenu>
+                <DropdownMenuTrigger className="p-2 bg-primary-foreground rounded-full">
+                    <Menu size={24}/>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-primary-foreground text-primary-text-color font-semibold w-32 p-2 rounded-sm">
-                    <DropdownMenuItem>Home</DropdownMenuItem>
+                    <DropdownMenuItem><a href="#about">About</a></DropdownMenuItem>
                     <DropdownMenuSeparator className="bg-primary-text-color"/>
-                    <DropdownMenuItem>Projects</DropdownMenuItem>
+                    <DropdownMenuItem><a href="#projects">Projects</a></DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Contact</DropdownMenuItem>
+                    <DropdownMenuItem><a href="#techStack">Tech stack</a></DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem><a href="#contact">Contact</a></DropdownMenuItem>
                 </DropdownMenuContent>
-            </DropdownMenu> */}
-            <Switch/>
+            </DropdownMenu>
         </div>
     )
 }

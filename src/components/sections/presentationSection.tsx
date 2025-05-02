@@ -39,7 +39,7 @@ export function Presentation(){
                             transition: { duration: 0.8, delay: 2.5 },
                         }}
                     >
-                        <FaGithub className="size-6 sm:size-10"/>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Jepennn"><FaGithub className="size-6 sm:size-10"/></a>
                     </motion.button>
                     <motion.button
                         className="animation-button"
@@ -49,7 +49,7 @@ export function Presentation(){
                             transition: { duration: 0.8, delay: 2.5 },
                         }}
                     >
-                        <FaLinkedin className="size-6 sm:size-10"/>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jesper-hesselgren-412220197/"><FaLinkedin className="size-6 sm:size-10"/></a>
                     </motion.button>
                     <motion.div
                         initial={{ scale: 0 }}

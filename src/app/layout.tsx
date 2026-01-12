@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "../index.css";
 import { ProgressBarWrapper } from "@/components/progressBarWrapper";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export const metadata: Metadata = {
   title: "Jesper Hesselgren - Portfolio",
@@ -9,11 +11,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <ProgressBarWrapper>
-          <div id="root">{children}</div>
-        </ProgressBarWrapper>
+        <ThemeProvider>
+          <div className="fixed top-4 right-4 z-50">
+            <ThemeToggle />
+          </div>
+          <ProgressBarWrapper>
+            <div id="root">{children}</div>
+          </ProgressBarWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );

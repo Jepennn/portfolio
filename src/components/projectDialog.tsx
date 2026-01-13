@@ -10,7 +10,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { FaGithub, FaExternalLinkAlt, FaDev } from "react-icons/fa";
-import { X } from "lucide-react";
 
 interface ProjectDialogProps {
   open: boolean;

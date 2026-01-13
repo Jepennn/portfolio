@@ -34,7 +34,7 @@ export function CarrerCard({ company, position, description, date, svg }: Carrer
                 </div>
                 <p className="mb-6">{description}</p>
             </div>
-            <Badge variant="outline" className="bg-secondary-gray shadow-md border-2">{date}</Badge> 
+            <Badge variant="outline" className="bg-secondary-gray text-gray-800 shadow-md border-2">{date}</Badge> 
         </motion.div>
     )
 }

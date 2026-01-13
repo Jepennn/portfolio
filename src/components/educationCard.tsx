@@ -17,7 +17,7 @@ export function EducationCard(){
                 <h3>KTH Royal Institute of Technology</h3>
                 <h5 className="mb-2">Information Technology</h5>
                 <p className="mb-6">I’m studying the Information and Communication Technology program at KTH Royal Institute of Technology. The program focuses on programming, mathematics, and computer science.</p>
-                <Badge variant="outline" className="bg-secondary-gray shadow-md border-2">2023-present</Badge> 
+                <Badge variant="outline" className="bg-secondary-gray text-gray-800 shadow-md border-2">2023-present</Badge> 
             </div>
 
             {/* Logo */}

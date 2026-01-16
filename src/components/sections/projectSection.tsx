@@ -63,6 +63,18 @@ export function ProjectSection() {
       githubUrl: "https://github.com/andensanden/II1305",
       demoUrl: "https://dronezone.se",
     },
+    {
+      title: "Local AI Language companion",
+      id: 4,
+      description:
+        "A Chrome extension that serves as your personal AI-powered translation assistant and language tutor. Built with modern web technologies to provide seamless language translation directly in your browser.",
+      typeOfProject: "Personal Project",
+      image: "/project-Images/portfolio.png",
+      dev: false,
+      featured: true,
+      techStack: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+      githubUrl: "https://github.com/Jepennn/chrome-extension-translater",
+    },
   ];
 
   const featuredProjects = projects.filter((p) => p.featured);

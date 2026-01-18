@@ -13,7 +13,7 @@ export function ProgressBar({children}: {children: React.ReactNode}){
             initial={{ width: 0, originX: 1}}
             animate={{ width: "100%", originX: 0}}
             style={{ scaleX: scrollYProgress }} 
-            className="h-4 bg-primary-orange fixed top-0 left-0"
+            className="h-4 bg-primary-orange fixed top-0 left-0 z-50"
             />
         {children}
         </>

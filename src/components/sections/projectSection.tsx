@@ -68,6 +68,18 @@ export function ProjectSection() {
       demoUrl: "https://kthais.com/",
     },
     {
+      title: "Generic RAG pipeline",
+      id: 3,
+      description:" Group project, working on a RAG pipeline that uses Pinecone to store and query data to augment an LLM with relevant information to answer user questions.",
+      typeOfProject: "Group Project",
+      image: "/project-Images/rag-pipeline.png",
+      dev: false,
+      featured: false,
+      visible: true,
+      techStack: ["Next.js", "Python", "FastAPI", "Typescript", "Pinecone"],
+      githubUrl: "https://github.com/Jepennn/RAG-system",
+    },
+    {
       title: "Portfolio",
       id: 4,
       description:
@@ -77,7 +89,7 @@ export function ProjectSection() {
       dev: false,
       featured: false,
       visible: true,
-      techStack: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+      techStack: ["React","Next.js",  "TypeScript", "Tailwind", "Framer Motion"],
       githubUrl: "https://github.com/Jepennn/portfolio",
       demoUrl: "https://www.jesperhesselgren.dev/",
     },

@@ -41,10 +41,10 @@ export function TechStackSection() {
               <TechStackCard title="React" svg="/react-js.svg" />
               <TechStackCard title="Tailwind" svg="/tailwindcss.svg" />
               <TechStackCard title="Redux" svg="/redux.svg" />
-              <TechStackCard title="HTML" svg="/html5.svg" />
               <TechStackCard title="CSS" svg="/css.svg" />
+              <TechStackCard title="JavaScript" svg="/js.svg" />
               <TechStackCard title="TypeScript" svg="/typescript.svg" />
-              <TechStackCard title="Framer Motion" svg="/framer-motion.svg" />
+              <TechStackCard title="Next.js" svg="/nextjs.svg" />
             </div>
           </motion.div>
 
@@ -88,6 +88,7 @@ export function TechStackSection() {
           <div className="flex flex-wrap gap-2 my-4">
             <TechStackCard title="Docker" svg="/docker.svg" />
             <TechStackCard title="Git" svg="/git.svg" />
+            
             <TechStackCard title="GitHub" svg="/github.svg" />
             <TechStackCard title="npm" svg="/npm.svg" />
           </div>

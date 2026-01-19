@@ -23,7 +23,7 @@ export function Presentation() {
         <TypingText text="Hi, I'm Jesper Hesselgren" delay={0} />
 
         {/*I'm a tech student at KTH section. */}
-        <TypingText text="I'm a tech student at KTH" delay={1.2} />
+        <TypingText text="a tech student at KTH" delay={1.2} />
 
         {/*Socials button section, github, linkedIn and open to work button*/}
         <div className="flex flex-row w-full justify-start gap-3 sm:gap-5 mt-2">

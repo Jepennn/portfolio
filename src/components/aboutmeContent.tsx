@@ -10,10 +10,21 @@ export function AboutMeContent(){
             transition: { duration: 0.25, delay: 0.03},
         }}
         className="flex flex-col sm:flex-row justify-start  items-center p-5 my-5 gap-12">
+        <div className="relative sm:h-52 sm:w-52 h-40 w-40 group">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-orange/20 to-green-500/20 rounded-4xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+          <img 
+            src="/profile.jpeg" 
+            alt="profile-image" 
+            className="relative sm:h-52 sm:w-52 h-40 w-40 object-cover border-[3px] border-border rounded-4xl shadow-2xl hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all duration-300 ring-2 ring-border/30" 
+          />
+        </div>
         <p className="sm:w-2/3 text-lg">
-        I'm a 24-year-old KTH student, currently studying my second year of the Information Technology program. I have a strong passion for web development, and tech in general. I love exploring new technologies, learning new frameworks, and building different types of applications. When I am not studying or playing around with code, I enjoy training at the gym, going for runs, and spending quality time with my friends and family.
+        I enjoy exploring new technologies and building web applications that tackles real world problems, with a focus on creating intuitive user experiences and scalable solutions. 
+        
+        <br /><br />
+        
+        Currently exploring <span className="font-semibold text-primary-orange">GCP's offerings</span> and how to build applications that utilize <span className="font-semibold text-primary-orange">Applied AI</span> to solve complex problems and enhance user experiences.
         </p>
-        <img src="/profile.jpeg" alt="profile-image" className="sm:h-52 sm:w-52 object-cover border-6 border-primary-orange rounded-4xl" />
         </motion.div>
     )
 }
@@ -22,4 +33,3 @@ export function AboutMeContent(){
 
 
 
-//   I'm a 24-year-old KTH student, currently in my second year of the Information Technology program. I have a strong passion for programming, software development, and tech in general. I love exploring new technologies, learning new frameworks, and building different types of applications. When I am not studying or playing around with code, I enjoy training at the gym, going for runs, playing football, and spending quality time with my friends and family. I also have a big interest in reading books, both fiction and non-fiction, especially those related to personal development and technology trends. I always strive to challenge myself, learn new things, and grow both personally and professionally.

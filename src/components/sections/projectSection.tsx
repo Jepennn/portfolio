@@ -33,7 +33,7 @@ export function ProjectSection() {
       description:
         "A Chrome extension that serves as your personal AI-powered translation assistant and language tutor. Built with modern web technologies to provide seamless language translation directly in your browser.",
       typeOfProject: "Personal Project",
-      image: "/project-Images/lingua.png",
+      image: "/project-Images/lexa.jpg",
       dev: false,
       featured: true,
       visible: true,
@@ -69,7 +69,7 @@ export function ProjectSection() {
     },
     {
       title: "Generic RAG pipeline",
-      id: 3,
+      id: 4,
       description:" Group project, working on a RAG pipeline that uses Pinecone to store and query data to augment an LLM with relevant information to answer user questions.",
       typeOfProject: "Group Project",
       image: "/project-Images/rag-pipeline.png",
@@ -81,7 +81,7 @@ export function ProjectSection() {
     },
     {
       title: "Portfolio",
-      id: 4,
+      id: 5,
       description:
         "This is my personal portfolio website built to showcase my skills and projects I have worked on or currently working on.",
       typeOfProject: "Personal Project",

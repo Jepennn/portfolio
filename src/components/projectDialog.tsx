@@ -9,7 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { FaGithub, FaExternalLinkAlt, FaDev } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 interface ProjectDialogProps {
   open: boolean;
@@ -40,19 +40,24 @@ export function ProjectDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl flex items-center gap-3">
+          <DialogTitle className="text-2xl flex items-center gap-2">
             {title}
             {dev && (
-              <Badge variant="outline" className="gap-1">
-                <FaDev /> In Development
+              <Badge
+                variant="default"
+                className="bg-secondary-gray text-gray-800 shadow-md hover:scale-105 transition-transform"
+              >
+                In Development
               </Badge>
             )}
           </DialogTitle>
-          <DialogDescription className="text-base">{typeOfProject}</DialogDescription>
+          <DialogDescription className="text-base flex items-center justify-between">
+            {typeOfProject}
+          </DialogDescription>
         </DialogHeader>
 
         {/* Project Image */}
-        <div className="rounded-lg overflow-hidden border-2 my-4">
+        <div className="rounded-lg overflow-hidden border-2 my-2">
           <img src={image} alt={title} className="w-full h-64 object-cover" />
         </div>
 

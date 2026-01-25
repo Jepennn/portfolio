@@ -26,7 +26,6 @@ export function ProjectSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const projects: Project[] = [
-
     {
       title: "Local AI Language companion",
       id: 1,
@@ -41,10 +40,22 @@ export function ProjectSection() {
       githubUrl: "https://github.com/Jepennn/chrome-extension-translater",
     },
     {
+      title: "Immigration system",
+      id: 7,
+      description:
+        "A relocation system for handling immigration cases, there all parties involved collaborate, communicate and track the status of the case.",
+      typeOfProject: "Startup project",
+      image: "/project-Images/permly.png",
+      dev: true,
+      featured: true,
+      visible: true,
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgresSQL"],
+    },
+    {
       title: "DroneZone",
       id: 2,
       description:
-      "Group project, working on a drone tracking system. Where I was responsible for the setting up the node.js server with express, websocket and supabase.",
+        "Group project, working on a drone tracking system. Where I was responsible for the setting up the node.js server with express, websocket and supabase.",
       typeOfProject: "Group Project",
       image: "/project-Images/dronezone.png",
       dev: false,
@@ -54,30 +65,32 @@ export function ProjectSection() {
       githubUrl: "https://github.com/andensanden/II1305",
       demoUrl: "https://dronezone.se",
     },
+
+    {
+      title: "Generic RAG pipeline",
+      id: 3,
+      description:
+        " Group project, working on a RAG pipeline that uses Pinecone to store and query data to augment an LLM with relevant information to answer user questions.",
+      typeOfProject: "Group Project",
+      image: "/project-Images/rag-pipeline.png",
+      dev: false,
+      featured: true,
+      visible: true,
+      techStack: ["Next.js", "Python", "FastAPI", "Typescript", "Pinecone"],
+      githubUrl: "https://github.com/Jepennn/RAG-system",
+    },
     {
       title: "KTH AI society",
-      id: 3,
+      id: 4,
       description:
         "KTH AI society is a student organization, I'm apart of the IT-team as a frontend developer rebuilding the website.",
       typeOfProject: "Student Organization",
       image: "/project-Images/kth-ai-society.png",
       dev: false,
-      featured: true,
+      featured: false,
       visible: true,
       techStack: ["Next.js", "TypeScript", "TanStack Query", "Tailwind CSS"],
       demoUrl: "https://kthais.com/",
-    },
-    {
-      title: "Generic RAG pipeline",
-      id: 4,
-      description:" Group project, working on a RAG pipeline that uses Pinecone to store and query data to augment an LLM with relevant information to answer user questions.",
-      typeOfProject: "Group Project",
-      image: "/project-Images/rag-pipeline.png",
-      dev: false,
-      featured: false,
-      visible: true,
-      techStack: ["Next.js", "Python", "FastAPI", "Typescript", "Pinecone"],
-      githubUrl: "https://github.com/Jepennn/RAG-system",
     },
     {
       title: "Portfolio",
@@ -89,7 +102,7 @@ export function ProjectSection() {
       dev: false,
       featured: false,
       visible: true,
-      techStack: ["React","Next.js",  "TypeScript", "Tailwind", "Framer Motion"],
+      techStack: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
       githubUrl: "https://github.com/Jepennn/portfolio",
       demoUrl: "https://www.jesperhesselgren.dev/",
     },
